@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
 
-# Домен проекта пока не задан.
-# Перед публикацией раскомментируйте строку и подставьте реальный адрес:
-# Sitemap: https://DOMAIN/sitemap.xml
+Sitemap: https://galileya2008-byte.github.io/---/sitemap.xml
