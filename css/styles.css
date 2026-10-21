@@ -357,7 +357,19 @@ button:disabled,
 }
 
 .price-alt { margin: 0 0 0.45rem; font-weight: 600; }
-.price-note { margin: 0 0 1rem; color: var(--muted); }
+.price-note { margin: 0 0 0.75rem; color: var(--muted); }
+.price-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin-top: 0.25rem;
+}
+.price-actions .button { width: 100%; }
+.price-card .button-ghost {
+  color: var(--navy);
+  border-color: rgba(12, 27, 51, 0.35);
+}
+.price-card .button-ghost:hover { background: rgba(12, 27, 51, 0.05); }
 
 .hero-facts {
   display: flex;
@@ -522,7 +534,41 @@ button:disabled,
 .band .price { color: var(--cream); }
 .band .button { background: var(--cream); color: var(--navy); }
 .band .button:hover { background: #fff; }
-.band .price-note { color: #e4e9f0; }
+.band .price-note,
+.band-alt { color: #e4e9f0; }
+
+.payment-panel {
+  margin: 1.6rem 0 1.8rem;
+  padding: 1.25rem 1.2rem 1.15rem;
+  max-width: 28rem;
+  background: var(--cream);
+  color: var(--ink);
+  border-top: 3px solid var(--brass);
+  scroll-margin-top: calc(var(--header) + 0.75rem);
+}
+
+.payment-panel h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.45rem;
+}
+
+.payment-panel > p {
+  margin: 0 0 0.9rem;
+  color: var(--muted);
+}
+
+.payment-widget {
+  width: 100%;
+  min-height: 2rem;
+  background: var(--white);
+}
+
+.payment-widget iframe {
+  display: block;
+  max-width: 100%;
+}
+
+.band-alt { margin: 0 0 0.85rem; }
 
 .site-footer {
   background: #081221;
@@ -790,7 +836,7 @@ dialog p { margin-bottom: 0; }
   .price-card { padding: 1rem 1rem 1rem; }
   .price-note { margin-bottom: 0.75rem; }
   .hero-aside-link .button,
-  .price-card .button,
+  .price-actions .button,
   .band .button,
   .soft-cta .button { width: 100%; }
   .brand-meta { display: none; }
