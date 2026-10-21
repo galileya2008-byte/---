@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <script>document.documentElement.classList.add("js")</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- canonical и абсолютный og:url не указаны: домен проекта пока не задан -->
+  <title>Линия дня — пример интерактива | Галина Оноприенко</title>
+  <meta name="description" content="Пример ежедневного творческого задания для сайта эксперта: рисунок на экране, календарь и прогресс только в вашем браузере.">
+  <meta name="author" content="Галина Оноприенко">
+  <meta name="theme-color" content="#0c1b33">
+  <meta property="og:title" content="Линия дня — пример интерактива">
+  <meta property="og:description" content="Одно творческое задание на календарный день и поле для рисунка. Прогресс хранится только в браузере.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="og-image.png">
+  <meta property="og:image:alt" content="Линия дня — пример ежедневного интерактива Галины Оноприенко.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Линия дня — пример интерактива">
+  <meta name="twitter:description" content="Одно творческое задание на календарный день. Рисунок и прогресс остаются в браузере.">
+  <meta name="twitter:image" content="og-image.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch.png">
+  <link rel="preload" href="fonts/or3PQ6P12-iJxAIgLa78DkTtAoDhk0oVpaK3YLanFLHpPf2TbLi4J_XWTFCW.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/gNMKW3F-SZuj7xmb-HY6EQ.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">К содержанию</a>
+  <header class="site-header">
+    <div class="wrap header-bar">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Галина Оноприенко</span>
+        <span class="brand-meta">Сайт одной услуги</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Меню</button>
+      <nav id="site-nav" class="site-nav" aria-label="Разделы страницы">
+        <ul>
+          <li><a href="index.html#zachem">Зачем</a></li>
+          <li><a href="index.html#dlya-kogo">Для кого</a></li>
+          <li><a href="index.html#sostav">Состав</a></li>
+          <li><a href="index.html#obo-mne">Обо мне</a></li>
+          <li><a href="index.html#voprosy">Вопросы</a></li>
+          <li><a href="liniya-dnya.html" aria-current="page">Интерактив</a></li>
+          <li class="nav-cta"><a href="https://t.me/neiro_galina" target="_blank" rel="noopener noreferrer">Обсудить мой сайт<span class="visually-hidden"> (откроется в Telegram в новой вкладке)</span></a></li>
+        </ul>
+      </nav>
+      <a class="button button-small header-cta" href="https://t.me/neiro_galina" target="_blank" rel="noopener noreferrer">Обсудить<span class="visually-hidden"> мой сайт: откроется в Telegram в новой вкладке</span></a>
+    </div>
+  </header>
+  <script src="js/main.js"></script>
+
+  <main id="content">
+    <header class="page-intro">
+      <div class="wrap">
+        <p class="back-link"><a href="index.html#interaktiv">К описанию услуги</a></p>
+        <h1>Линия дня</h1>
+        <p>Пример дополнительной функции для сайта специалиста Нейрографики: одно короткое творческое задание на календарный день. Это не алгоритм Нейрографики. Здесь нет диагностики, трактовки рисунка, предсказаний и обещаний исполнения желаний.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="task-title">
+      <div class="wrap stack">
+        <h2 id="task-title">Творческое задание</h2>
+        <p>Каждый календарный день — одно задание на внимание, наблюдение, цель или творческое самовыражение. Оно зависит от локальной даты устройства и не меняется при обновлении страницы. Практика занимает около 1–3 минут. Рисовать можно на экране или на бумаге.</p>
+        <article id="today-task" class="task-card" hidden></article>
+        <div id="all-tasks">
+          <p>Ниже все 30 заданий. Если скрипты включены, на экране остаётся только задание сегодняшнего дня.</p>
+          <ol id="task-list" class="task-index">
+            <li>Проведите одну непрерывную линию от левого края к правому. Там, где рука замедлится, сделайте небольшую петлю и продолжайте.</li>
+            <li>Выберите предмет перед собой. Нарисуйте только его внешний контур, без деталей внутри.</li>
+            <li>Поставьте три точки и подпишите их: «утро», «день», «вечер». Соедините точки линией в том порядке, в каком идёт ваш сегодняшний день.</li>
+            <li>Напишите одно слово — фокус работы на сегодня. Обведите его спокойной линией, не зачёркивая буквы.</li>
+            <li>Нарисуйте круг примерно с ладонь. Закрасьте только край, центр оставьте свободным.</li>
+            <li>Возьмите два цвета. Первым отметьте то, что по вашей услуге уже понятно клиенту. Вторым — одну мысль, которую стоит прояснить на сайте.</li>
+            <li>Найдите рядом прямую линию: край стола, раму, полку. Повторите её на листе три раза, каждый раз чуть свободнее.</li>
+            <li>Нарисуйте лестницу из пяти ступеней. На нижней напишите «сейчас». Верхнюю оставьте пустой.</li>
+            <li>На два вдоха закройте глаза. Откройте и нарисуйте форму того, на чём первым остановился взгляд. Без сюжета и пояснений.</li>
+            <li>Проведите вертикальную линию. Слева напишите одно слово о том, что уже сделано. Справа — одно слово о следующем шаге.</li>
+            <li>Нарисуйте рамку. Внутри поместите одно дело, которому сегодня действительно стоит уделить внимание.</li>
+            <li>Сделайте десять коротких штрихов разной длины. Любые три соедините в одну фигуру.</li>
+            <li>Нарисуйте дорожку из точек снизу вверх. В конце поставьте маленький круг — место остановки, не финиш.</li>
+            <li>Выберите приятный глазу цвет и заполните им небольшую полосу. Рядом оставьте такую же полосу пустой.</li>
+            <li>Напишите, для кого ваша ключевая услуга — одним словосочетанием. Подчеркните его ровной линией.</li>
+            <li>Нарисуйте привычный короткий знак: галочку, волну или круг. Повторите его медленнее, чем обычно.</li>
+            <li>Разделите лист одной дугой. В меньшей части напишите действие, на которое сегодня хватит трёх минут.</li>
+            <li>На каждый спокойный выдох добавляйте короткий штрих. Остановитесь на семи штрихах.</li>
+            <li>Нарисуйте окно из четырёх линий. В одной части — контур предмета, который видите. Остальные части оставьте пустыми.</li>
+            <li>Поставьте точку в центре. Проведите от неё три линии и подпишите концы: «дело», «люди», «я».</li>
+            <li>Нарисуйте три вложенных круга. В самом маленьком напишите одно слово — на чём держите внимание сегодня.</li>
+            <li>Нарисуйте прямоугольник. Внутри напишите три слова, которые новый человек должен понять о вашей услуге первыми.</li>
+            <li>Проведите горизонтальную линию. Ниже коротко отметьте то, что уже есть в вашей практике. Выше — одну возможность, которую хотите яснее описать клиентам.</li>
+            <li>Разделите лист на четыре клетки. В каждой — маленький знак дня: предмет, цвет, дело или погода. Без расшифровки.</li>
+            <li>Медленно проведите линию, считая до десяти. Рядом проведите похожую линию быстро. Ничего не исправляйте.</li>
+            <li>Нарисуйте стрелку и подпишите её одним глаголом — действием, которое можете сделать сразу после этой минуты.</li>
+            <li>Прислушайтесь к звуку вокруг. Передайте его линией: ровной, прерывистой или волнистой — как слышится, без оценки.</li>
+            <li>Нарисуйте простой контур места, где вы работаете: стол, комната или мастерская. Отметьте, где для клиента «вход» — с чего начинается обращение.</li>
+            <li>Напишите три коротких слова о своей услуге. Оставьте самое понятное для нового человека, остальные аккуратно зачеркните.</li>
+            <li>Нарисуйте круг и рядом поставьте сегодняшнюю дату. Внутри круга достаточно одной линии, чтобы отметить этот день.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-paper" id="practice" aria-labelledby="canvas-title">
+      <div class="wrap stack">
+        <h2 id="canvas-title">Поле для рисунка</h2>
+        <p id="canvas-help">Рисуйте мышью, пальцем или стилусом. Прокрутка страницы работает за пределами поля. Кнопка «Отменить», а также Ctrl+Z или Cmd+Z, убирает последний штрих. Очистка спрашивает подтверждение и не удаляет отметки в календаре.</p>
+        <noscript>
+          <p>Поле рисования, календарь и сохранение включаются с JavaScript. Задания выше можно выполнить на бумаге.</p>
+        </noscript>
+        <p id="canvas-error" class="warning" hidden>Поле рисования недоступно в этом браузере. Задание можно выполнить на бумаге.</p>
+        <div class="tools">
+          <div class="swatches" role="group" aria-label="Цвет линии">
+            <button type="button" class="swatch" style="--swatch:#172033" data-color="#172033" data-label="тёмно-синий" aria-pressed="true" aria-label="Тёмно-синий"></button>
+            <button type="button" class="swatch" style="--swatch:#1f4e89" data-color="#1f4e89" data-label="синий" aria-pressed="false" aria-label="Синий"></button>
+            <button type="button" class="swatch" style="--swatch:#8d6b3f" data-color="#8d6b3f" data-label="латунный" aria-pressed="false" aria-label="Латунный"></button>
+            <button type="button" class="swatch" style="--swatch:#8f4d45" data-color="#8f4d45" data-label="терракотовый" aria-pressed="false" aria-label="Терракотовый"></button>
+            <button type="button" class="swatch" style="--swatch:#2f6f5e" data-color="#2f6f5e" data-label="зелёный" aria-pressed="false" aria-label="Зелёный"></button>
+            <button type="button" class="swatch" style="--swatch:#5c4d73" data-color="#5c4d73" data-label="сливовый" aria-pressed="false" aria-label="Сливовый"></button>
+          </div>
+          <p id="color-name" class="note">Цвет: тёмно-синий</p>
+          <label class="width-control" for="line-width">Толщина линии: <span id="line-width-value">4</span>
+            <input id="line-width" type="range" min="2" max="16" step="1" value="4">
+          </label>
+        </div>
+        <div class="tool-actions">
+          <button type="button" class="button button-small button-ghost" id="undo" disabled>Отменить</button>
+          <button type="button" class="button button-small button-ghost" id="clear" disabled>Очистить</button>
+          <button type="button" class="button button-small" id="save-png" disabled>Сохранить PNG</button>
+        </div>
+        <div class="canvas-frame" id="canvas-frame">
+          <canvas id="draw-canvas" width="900" height="520" aria-label="Поле для рисования. Рисуйте мышью, пальцем или стилусом." aria-describedby="canvas-help"></canvas>
+        </div>
+        <p id="old-drawing" class="note" hidden>На поле сохранён рисунок другого дня. Задание уже новое — рисунок можно очистить и начать заново.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="mark-title">
+      <div class="wrap stack">
+        <h2 id="mark-title">Отметка дня</h2>
+        <p>Кнопка отмечает практику за текущий календарный день. Повторное нажатие не увеличивает число дней. Пропущенные дни ничего не обнуляют и не штрафуются.</p>
+        <div class="practice-row">
+          <button type="button" class="button" id="complete" disabled>Я выполнил(а)</button>
+          <p id="day-counter" class="counter">Счётчик включится вместе с сохранением в браузере.</p>
+        </div>
+        <p id="today-flag" class="note" hidden>Сегодняшнее задание уже отмечено. Повторное нажатие не увеличивает счётчик.</p>
+        <p id="live-status" class="status-line" role="status" aria-live="polite"></p>
+
+        <h2>Календарь</h2>
+        <p>Отмеченные дни остаются в календаре и залиты тёмным. Рамка — сегодня. Если пропустить день, отметки за другие дни сохраняются.</p>
+        <div class="calendar-bar">
+          <button type="button" class="button button-small button-ghost" id="cal-prev" disabled>Предыдущий месяц</button>
+          <button type="button" class="button button-small button-ghost" id="cal-next" disabled>Следующий месяц</button>
+        </div>
+        <table class="calendar" id="calendar">
+          <caption id="cal-caption">Календарь активности</caption>
+          <thead>
+            <tr>
+              <th scope="col">Пн</th>
+              <th scope="col">Вт</th>
+              <th scope="col">Ср</th>
+              <th scope="col">Чт</th>
+              <th scope="col">Пт</th>
+              <th scope="col">Сб</th>
+              <th scope="col">Вс</th>
+            </tr>
+          </thead>
+          <tbody id="cal-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section section-paper" aria-labelledby="save-title">
+      <div class="wrap stack">
+        <h2 id="save-title">Сохранение</h2>
+        <p class="note">Прогресс и рисунок сохраняются только в этом браузере, на этом устройстве. Очистка данных браузера удалит сохранения. На сервер ничего не отправляется, регистрация не нужна.</p>
+        <p id="storage-warning" class="warning" role="alert" hidden>Сохранение в браузере недоступно. Прогресс и рисунок не запишутся и пропадут после закрытия страницы. Можно рисовать и отмечать день, пока эта вкладка открыта.</p>
+        <p><button type="button" class="button button-ghost" id="reset-progress">Сбросить прогресс</button></p>
+        <aside class="soft-cta">
+          <p>Если хотите мини-игру, практику или задание на странице своей услуги — напишите мне. Стоимость считается отдельно и не входит в цену сайта.</p>
+          <p><a class="button button-ghost" href="https://t.me/neiro_galina" target="_blank" rel="noopener noreferrer">Хочу такой интерактив на свой сайт<span class="visually-hidden"> (откроется в Telegram в новой вкладке)</span></a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-name">Галина Оноприенко</p>
+        <p>Разработчик сайтов, маркетолог, SMM-специалист и инструктор Нейрографики.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Нижняя навигация">
+        <a href="index.html">Услуга</a>
+        <a href="index.html#stoimost">Стоимость</a>
+        <a href="https://t.me/neiro_galina" target="_blank" rel="noopener noreferrer">Telegram<span class="visually-hidden"> (откроется в новой вкладке)</span></a>
+      </nav>
+    </div>
+    <div class="wrap">
+      <p class="legal">Домен, размещение и дальнейшее сопровождение обсуждаются до начала работы. © 2026 Галина Оноприенко</p>
+    </div>
+  </footer>
+
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title" aria-describedby="confirm-text">
+    <h2 id="confirm-title"></h2>
+    <p id="confirm-text"></p>
+    <div class="dialog-actions">
+      <button type="button" class="button button-ghost" id="confirm-cancel">Отмена</button>
+      <button type="button" class="button" id="confirm-accept">Подтвердить</button>
+    </div>
+  </dialog>
+
+  <script src="js/practice-core.js"></script>
+  <script src="js/interactive.js"></script>
+</body>
+</html>
